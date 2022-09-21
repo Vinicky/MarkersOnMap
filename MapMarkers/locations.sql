@@ -1,5 +1,3 @@
--- Vlozit do tabulky location
-
 CREATE TABLE `locations` (
                              `id` int(11) NOT NULL,
                              `lat` float(10,6) NOT NULL,
