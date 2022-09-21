@@ -1,7 +1,6 @@
 <?php
 include_once 'header.php';
 include 'locations_model.php';
-//get_unconfirmed_locations();exit;
 ?>
 
     <script type="text/javascript"
@@ -10,9 +9,6 @@ include 'locations_model.php';
 
     <div id="map"></div>
     <script>
-        /**
-         * Create new map
-         */
         var infowindow;
         var map;
         var red_icon =  'http://maps.google.com/mapfiles/ms/icons/red-dot.png' ;
@@ -61,7 +57,7 @@ include 'locations_model.php';
         var bindMarkerinfo = function(marker) {
             google.maps.event.addListener(marker, "click", function (point) {
                 var markerId = getMarkerUniqueId(point.latLng.lat(), point.latLng.lng());
-                var marker = markers[markerId]; // find marker
+                var marker = markers[markerId];
                 infowindow = new google.maps.InfoWindow();
                 infowindow.setContent(marker.html);
                 infowindow.open(map, marker);
