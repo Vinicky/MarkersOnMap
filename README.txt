@@ -1,0 +1,1 @@
+Soubor "locations.sql" je treba naimportovat do databaze "location"
